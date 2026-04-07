@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const { configDotenv } = require('dotenv');
 const cors = require('cors');
-
 const contactRouter = require('./routes/contactRouter');
 
 configDotenv();
@@ -17,7 +16,7 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-  origin: function (origin, callback) {
+  origin: function(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -29,8 +28,17 @@ app.use(cors({
   credentials: true
 }));
 
-//  Preflight request fix
-app.options("*", cors());
+// ✅ Express v4 safe preflight handler
+app.use((req, res, next) => {
+  if (req.method === "OPTIONS") {
+    res.header("Access-Control-Allow-Origin", req.headers.origin || "*");
+    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
+    return res.sendStatus(200);
+  }
+  next();
+});
 
 /* ---------------- MIDDLEWARE ---------------- */
 
