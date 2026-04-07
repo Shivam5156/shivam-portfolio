@@ -40,7 +40,7 @@ function Contact() {
 
 
         } catch (err) {
-            toast.err("Error sending message ");
+            toast.error("Error sending message ");
         }
     };
     return (
