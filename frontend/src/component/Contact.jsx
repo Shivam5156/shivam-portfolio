@@ -7,6 +7,8 @@ import { toast } from "react-toastify";
 
 function Contact() {
 
+    const backendurl = import.meta.env.VITE_API_URL
+
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -32,7 +34,7 @@ function Contact() {
         }
 
         try {
-            const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, form);
+           const res = await axios.post(`${backendurl}/api/contact`, form);
             if (res) {
                 toast.success(res.data.message);
                 setForm({ name: "", email: "", message: "" });
