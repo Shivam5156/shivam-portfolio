@@ -16,9 +16,8 @@ const allowedOrigins = [
   'https://shivam-portfolio-git-main-shivam5156s-projects.vercel.app'
 ];
 
-const corsOptions = {
+app.use(cors({
   origin: function (origin, callback) {
-    // allow requests with no origin (like mobile apps or curl)
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -28,14 +27,12 @@ const corsOptions = {
   },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
-};
+}));
+
+//  Preflight request fix
+app.options("*", cors());
 
 /* ---------------- MIDDLEWARE ---------------- */
-
-app.use(cors(corsOptions));
-
-// ✅ Fixed wildcard (Express v5 compatible)
-app.options(/.*/, cors(corsOptions));
 
 app.use(express.json());
 
