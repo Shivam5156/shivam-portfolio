@@ -11,22 +11,25 @@ const PORT = process.env.PORT || 5000
 
 
 app.use(express.json())
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://shivam-portfolio-git-main-shivam5156s-projects.vercel.app'
+];
 
 app.use(cors({
-    origin: function (origin, callback) {
-        const allowedOrigins = [
-            'http://localhost:5173',
-            'https://shivam-portfolio-git-main-shivam5156s-projects.vercel.app'
-        ];
-
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            console.log("Blocked origin:", origin);
-            callback(new Error('Not allowed by CORS'));
-        }
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.log("Blocked origin:", origin);
+      callback(null, false);
     }
+  }
 }));
+
+app.get('/', (req, res) => {
+    res.send("Server is running 🚀");
+});
 
 app.use('/api', contactRouter)
 
