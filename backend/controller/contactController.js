@@ -15,7 +15,7 @@ const sendContactMail = async (req, res) => {
         }
 
         console.log(process.env.USER_MAIL);
-        
+
         const mailOptions = {
             from: process.env.USER_MAIL,
             to: process.env.USER_MAIL,
@@ -28,12 +28,24 @@ const sendContactMail = async (req, res) => {
 
         }
 
-       await transporter.sendMail(mailOptions);
+        try {
+            console.log("⏳ Sending mail...");
+            await transporter.sendMail(mailOptions);
+            console.log("✅ Mail sent");
 
-        return res.status(200).json({
-            success: true,
-            message: "Message sent successfully"
-        });
+            return res.status(200).json({
+                success: true,
+                message: "Message sent successfully"
+            });
+        } catch (error) {
+            console.error("❌ ERROR:", error);
+
+            return res.status(500).json({
+                success: false,
+                message: "Email failed",
+                error: error.message
+            });
+        }
 
     } catch (error) {
         return res.status(500).json({
