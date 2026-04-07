@@ -17,7 +17,7 @@ const projects = [
         tech: ["React", "JavaScript", "DSA"],
         github: "https://github.com/your-username/two-sum-visualizer",
         live: "https://your-two-sum-link.com",
-        image: "/images/twosum.png",
+        image: "/BinarySearch.png",
         color: "text-pink-400",
         bg: "bg-pink-500/10",
         border: "border-pink-500/30",
