@@ -33,7 +33,10 @@ const corsOptions = {
 /* ---------------- MIDDLEWARE ---------------- */
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // ✅ preflight handling
+
+// ✅ Fixed wildcard (Express v5 compatible)
+app.options(/.*/, cors(corsOptions));
+
 app.use(express.json());
 
 /* ---------------- ROUTES ---------------- */
@@ -43,6 +46,12 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api', contactRouter);
+
+/* ---------------- 404 HANDLER ---------------- */
+
+app.use((req, res) => {
+  res.status(404).json({ message: "Route not found" });
+});
 
 /* ---------------- START SERVER ---------------- */
 
