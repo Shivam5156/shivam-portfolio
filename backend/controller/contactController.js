@@ -14,6 +14,8 @@ const sendContactMail = async (req, res) => {
             })
         }
 
+        console.log(process.env.USER_MAIL);
+        
         const mailOptions = {
             from: process.env.USER_MAIL,
             to: process.env.USER_MAIL,
