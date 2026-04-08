@@ -11,26 +11,26 @@ function Hero() {
       id="home"
       className="min-h-screen flex items-center pt-24 pb-16 bg-gradient-to-r from-[#1a1a1a] via-dark-300 to-dark-100"
     >
-      <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+      <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-10">
 
         {/* Left side */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             Hi, I'm <span className="text-purple">Shivam Singh</span>
           </h1>
 
-          <h2 className="typewriter text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="typewriter text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-center md:text-left">
             Full Stack Developer
           </h2>
 
-          <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-md sm:max-w-lg mx-auto md:mx-0">
+          <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-md">
             Passionate MERN Stack Developer focused on creating high-performance,
             user-friendly, and visually appealing websites.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 w-full max-w-[400px] mx-auto md:mx-0">
+          <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[400px]">
 
             <a
               href="#projects"
