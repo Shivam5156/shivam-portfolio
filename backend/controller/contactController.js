@@ -11,7 +11,7 @@ const sendContactMail = async (req, res) => {
             });
         }
 
-        console.log(" Sending via API...");
+        // console.log(" Sending via API...");
 
         await axios.post(
             "https://api.brevo.com/v3/smtp/email",
@@ -21,7 +21,7 @@ const sendContactMail = async (req, res) => {
                 },
                 to: [
                     {
-                        email: process.env.SMTP_USER,
+                        email: "shivam.singh.x5156@gmail.com",
                     },
                 ],
 
