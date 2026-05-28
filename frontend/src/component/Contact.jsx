@@ -147,24 +147,14 @@ function Contact() {
               <div>
                 <h3 className="text-base sm:text-lg font-semibold mb-1">Email</h3>
                 <a
-                  href="mailto:singhs36533@gmail.com"
+                  href="mailto:shivam.singh.x5156@gmail.com"
                   className="text-gray-300 hover:text-purple underline underline-offset-4 text-sm sm:text-base"
                 >
-                  singhs36533@gmail.com
+                  shivam.singh.x5156@gmail.com
                 </a>
               </div>
             </div>
 
-            {/* Phone */}
-            <div className="flex items-start gap-4">
-              <FaPhone className="text-purple text-xl sm:text-2xl mt-1" />
-              <div>
-                <h3 className="text-base sm:text-lg font-semibold mb-1">Phone</h3>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  +91 8120965156
-                </p>
-              </div>
-            </div>
 
             {/* Social Links */}
             <div className="pt-4">
