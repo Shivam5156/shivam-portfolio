@@ -21,7 +21,7 @@ const sendContactMail = async (req, res) => {
                 },
                 to: [
                     {
-                        email: "shivam.singh.x5156@gmail.com",
+                        email: process.env.SMTP_USER,
                     },
                 ],
 
