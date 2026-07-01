@@ -40,7 +40,7 @@ const projects = [
         desc: "A full-stack authentication system with secure login/signup, JWT-based authentication, and protected routes.",
         tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
         github: "https://github.com/your-username/auth-system",
-        live: "",
+        live: "https://authentication-system-git-main-shivam5156s-projects.vercel.app/",
         image: "/authsystem.png",
         color: "text-orange-400",
         bg: "bg-orange-500/10",
@@ -48,7 +48,7 @@ const projects = [
     },
 
     {
-        title: "AI Chatbot (Groq API)",
+        title: "AI Powered Chatbot ",
         desc: "A full-stack AI chatbot powered by Groq API with secure authentication, real-time responses, and an interactive user interface.",
         tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Groq API"],
         github: "https://github.com/Shivam5156/Chatbot",
