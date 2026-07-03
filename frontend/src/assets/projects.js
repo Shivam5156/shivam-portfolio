@@ -23,6 +23,25 @@ const projects = [
         border: "border-pink-500/30",
         featured: true,
     },
+
+    {
+        title: "AI Interview Preparation Platform",
+        desc: "An AI-powered MERN application that generates personalized interview questions, evaluates responses using Google Gemini AI, and provides detailed performance feedback.",
+        tech: [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "JWT",
+            "Google Gemini API"
+        ],
+        github: "https://github.com/Shivam5156/Interview-Preparation-Platform",
+        live: "https://interview-prepration-platform-git-main-shivam5156s-projects.vercel.app/",
+        image: "/ai-interview.png",
+        color: "text-cyan-400",
+        bg: "bg-cyan-500/10",
+        border: "border-cyan-500/30",
+    },
     {
         title: "Binary Search Algorithm Visualizer",
         desc: "An interactive Binary Search visualizer demonstrating step-by-step execution and O(log n) time complexity.",
