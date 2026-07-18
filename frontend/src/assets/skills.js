@@ -1,6 +1,6 @@
-import { FaReact, FaNodeJs, FaDatabase, FaJava } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaJava,FaLaptopCode } from "react-icons/fa";
 // import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
-import { FaTools } from "react-icons/fa";
+// import { FaTools } from "react-icons/fa";
 const skills = [
     {
         title: "Frontend Development",
@@ -53,7 +53,7 @@ const skills = [
         "Vercel",
         "Render"
     ],
-    icon: FaTools,
+    icon: FaLaptopCode,
     color: "text-cyan-400",
     bg: "bg-cyan-500/10",
     border: "border-cyan-500/30",
