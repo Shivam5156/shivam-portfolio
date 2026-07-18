@@ -55,11 +55,11 @@ function About() {
               </h3>
 
               <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-                Hi, I’m Shivam Singh, a passionate Full Stack Developer, currently in the final year of my B.Tech in Computer Science and Information Technology at SIRT College, Bhopal.
+                Hi, I'm Shivam Singh, a MERN Stack Developer and a Computer Science & Information Technology graduate from SIRT College, Bhopal. I enjoy building scalable full-stack web applications using modern web technologies.
               </p>
 
               <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-                I specialize in React, JavaScript, Node.js, and Tailwind CSS. I focus on clean code, performance optimization, and smooth user experience.
+                Software Engineer with hands-on experience in the MERN stack, specializing in React.js, Node.js, Express.js, MongoDB, and JavaScript. Passionate about building scalable full-stack applications with clean, maintainable code and a strong focus on performance and user experience. Passonate about software engineeringand developing reliable, high-performance applications
               </p>
 
               <p className="text-gray-300 mb-6 text-sm sm:text-base leading-relaxed">

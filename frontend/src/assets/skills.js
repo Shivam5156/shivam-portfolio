@@ -42,6 +42,23 @@ const skills = [
         border: "border-orange-500/30",
         hover: "hover:shadow-orange-500/20",
     },
+    {
+    title: "Tools & Platforms",
+    desc: "Experienced with modern development tools for coding, version control, API testing, database management, and deployment.",
+    tech: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "VS Code",
+        "Vercel",
+        "Render"
+    ],
+    icon: FaTools,
+    color: "text-cyan-400",
+    bg: "bg-cyan-500/10",
+    border: "border-cyan-500/30",
+    hover: "hover:shadow-cyan-500/20",
+},
 ];
 
 export default skills;
