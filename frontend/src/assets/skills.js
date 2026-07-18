@@ -1,6 +1,6 @@
 import { FaReact, FaNodeJs, FaDatabase, FaJava } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
-
+// import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
+import { FaTools } from "react-icons/fa";
 const skills = [
     {
         title: "Frontend Development",
