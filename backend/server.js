@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:5173',
   'https://shivam-portfolio-git-main-shivam5156s-projects.vercel.app',
-  "https://shivam-portfolio-wheat-kappa.vercel.app"
+  'https://shivam-portfolio-wheat-kappa.vercel.app'
 ];
 
 app.use(cors({
